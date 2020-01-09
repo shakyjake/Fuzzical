@@ -3,7 +3,7 @@ var Fuzzical = function(Input, Haystack){
 	var _ = this;
 	
 	_.Input = Input;
-	_.InputChars = _.Input.split('');
+	_.InputChars = _.Input.toLowerCase().split('');
 	_.Haystack = Haystack;
 	
 	_.Map = {
@@ -56,7 +56,7 @@ var Fuzzical = function(Input, Haystack){
 			return 1;
 		}
 		var Score = 0;
-		var PhraseChars = Phrase.split('');
+		var PhraseChars = Phrase.toLowerCase().split('');
 		PhraseChars.forEach(function(Char, Index){
 			if(Index < _.InputChars.length){
 				if(Char.toLowerCase() === _.InputChars[Index].toLowerCase()){
