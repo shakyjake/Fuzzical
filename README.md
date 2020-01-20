@@ -2,7 +2,7 @@
 Fuzzy string matching based on physical distance between keys
 
 ## Usage
-`new Fuzzical('yrdy', ['rest', 'best', 'test', 'Lorem ipsum dolor sit amet']);` will return an ordered array of objects like so:
+`new Fuzzical('yrdy', ['tester', 'test', 'Lorem ipsum dolor sit amet']);` will return an ordered array of objects like so:
 ```
 [
   {"Phrase":"test","Score":0.4375},
